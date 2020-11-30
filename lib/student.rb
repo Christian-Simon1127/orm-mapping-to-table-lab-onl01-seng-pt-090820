@@ -1,5 +1,5 @@
 class Student
-  attr_accessor :name, :age
+  attr_accessor :name, :grade
   attr_reader :id
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn] 
@@ -9,7 +9,7 @@ class Student
     CREATE TABLE IF NOT EXISTS students (
       id INTEGER PRIMARY KEY,
       name TEXT,
-      age INTEGER
+      grade INTEGER
     )
     SQL
     
