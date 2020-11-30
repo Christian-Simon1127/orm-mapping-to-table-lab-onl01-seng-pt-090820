@@ -23,9 +23,9 @@ class Student
     
   end
   
-  def initialize(name, age, id = nil)
+  def initialize(name, grade, id = nil)
     @name = name
-    @age = age
+    @grade = grade
     @id = id    
   end
   
