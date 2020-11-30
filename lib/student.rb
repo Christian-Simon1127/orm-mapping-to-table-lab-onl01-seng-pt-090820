@@ -10,14 +10,14 @@ class Student
       id INTEGER PRIMARY KEY,
       name TEXT,
       grade INTEGER
-    )
+    );
     SQL
     
     DB[:conn].execute(sql)
   end 
   
   def self.drop_table
-    DB[:conn].execute("DROP TABLE students")
+    DB[:conn].execute("DROP TABLE students;")
   end
   
   def initialize(name, grade, id = nil)
