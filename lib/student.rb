@@ -4,7 +4,11 @@ class Student
   #  with DB[:conn] 
   
   def self.create_table
+    sql = <<-SQL 
+    CREATE TABLE IF NOT EXISTS students
     
+    
+    SQL
   end 
   
   def self.drop_table
